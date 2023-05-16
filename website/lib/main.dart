@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:website/page/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const ZonnebloemHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
